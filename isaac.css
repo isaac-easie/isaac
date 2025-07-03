@@ -1,0 +1,114 @@
+:root {
+    --bg: #0f172a;
+    --text: #f1f5f9;
+    --primary: #22d3ee;
+    --accent: #10b981;
+    --nav: #1e293b;
+  }
+  [data-theme="light"] {
+    --bg: #f1f5f9;
+    --text: #0f172a;
+    --primary: #0ea5e9;
+    --accent: #059669;
+    --nav: #e2e8f0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  header {
+    background-color: var(--nav);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  h1, h2 {
+    color: var(--primary);
+  }
+  ul {
+    padding-left: 20px;
+  }
+  .comment-box input,
+  .comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: var(--nav);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: var(--text);
+  }
+  .comment-box button {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .comment-box button:hover {
+    opacity: 0.9;
+  }
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .blog-posts {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .post-card {
+    background-color: var(--nav);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .post-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+  }
+  @media (max-width: 600px) {
+    .theme-toggle {
+      position: static;
+      margin-top: 10px;
+    }
+    header {
+      padding: 15px;
+    }
+  }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Easie | Tech Explorer</title>
+  <link rel="stylesheet" href="isaac.css">
+</head>
+<link rel="stylesheet" href="isaac.css">
+<body>
+  <header>
+    <h1>Isaac Easie</h1>
+    <p>Ethical Hacker | Programmer | Cybersecurity Enthusiast</p>
+    <button class="theme-toggle" onclick="toggleTheme()">Theme</button>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a self-taught ethical hacker and programmer from Uganda. I explore secure coding, Linux systems, and digital defense. I aim to empower youth with skills in cybersecurity and ethical tech.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python, HTML, CSS, JS, Bash</li>
+      <li>Cybersecurity: Network Scanning, Pen Testing, Linux Scripting</li>
+      <li>Tools: Kali Linux, Nmap, Wireshark, VS Code</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Python Keylogger (educational only)</li>
+      <li>Port Scanner with Python</li>
+      <li>Login Page Clone</li>
+      <li>Bash IP Logger</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2><a href="isaxtechhub.blogspot.com">Blog</a></h2>
+    <div class="blog-posts">
+      <div class="post-card">
+        <h3>5 Ethical Hacking Tools You Can Learn Today</h3>
+        <p>Discover beginner-friendly tools like Nmap, Wireshark, and more.</p>
+      </div>
+      <div class="post-card">
+        <h3>Why Cybersecurity Should Start in High School</h3>
+        <p>Learn how to raise awareness and teach ethical hacking early.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>Tools I Use</h2>
+    <ul>
+      <li>Kali Linux</li>
+      <li>Wireshark</li>
+      <li>Nmap</li>
+      <li>VS Code</li>
+      <li>Termux</li>
+    </ul>
+  </section>
+
+  <section id="resources">
+    <h2>Resources</h2>
+    <p>Courses: TryHackMe, HackTheBox<br>
+    Books: Web Hacker’s Handbook, Black Hat Python<br>
+    YouTube: NetworkChuck, The Cyber Mentor</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s build, learn, or hack together (ethically)!</p>
+    <p>Email: easieisaac@gmail.com</p>
+    <p>WhatsApp: <a href="https://wa.me/+256785874322">+256-785-874-322</a></p>
+    <p>Telegram: <a href="https://t.me/+256785874322">isaac easie</a></p>
+    <p>Instagram: <a href="https://instagram.com/isaaceasie">@isaaceasie</a></p>
+    <p>Facebook: <a href="https://facebook.com/isaaceasie">isaaceasie</a></p>
+  </section>
+
+  <section class="comment-box">
+    <h2>💬 Leave a Comment</h2>
+    <p>Have something to say about hacking, coding, or tech? Drop your thoughts below!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Comment" required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+  </section>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
+    }
+    document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+</body>
+</html>
